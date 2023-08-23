@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  list-style-type: none;
+  padding: 0;
+}
+
+.widget {
+  position: relative;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  border: 1px solid gray;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+
+.create {
+  cursor: pointer;
+}
+
+.list-container {
+  width: 468px;
+  border: 1px solid black;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.titles {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product:nth-child(n+2) {
+  margin-top: 15px;
+}
+
+.price {
+}
+
+.tools {
+  display: flex;
+  margin-right: 60px;
+}
+
+.popup {
+  position: absolute;
+  background-color: white;
+  width: 450px;
+  height: 250px;
+  border: 1px solid black;
+  top: 35px;
+  left: calc(50% - 225px);
+  padding: 20px;
+  font-size: 1.3rem;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-section:nth-child(n+2) {
+  margin-top: 15px;
+}
+
+.input {
+  height: 35px;
+  border-radius: 15px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.button {
+  height: 45px;
+  width: 160px;
+  border-radius: 15px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
