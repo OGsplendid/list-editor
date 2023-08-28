@@ -1,5 +1,4 @@
-import App from '../components/App/App';
+import Popup from '../components/popup/Popup';
 import '../css/style.css';
 
-const app = new App(document.querySelector('.application'));
-app.renderTable();
+const popup = new Popup(document.querySelector('.popup'));

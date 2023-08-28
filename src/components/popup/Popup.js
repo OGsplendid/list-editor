@@ -1,28 +1,23 @@
+import Widget from '../widget/Widget';
+
 export default class Popup {
   constructor(element) {
     this.element = element;
-    this.data = null;
+    this.widget = new Widget(document.querySelector('.widget'));
 
     this.cancelButton = this.element.querySelector('.cancel-button');
 
     this.createDataRow = this.createDataRow.bind(this);
-    this.cancelAdding = this.cancelAdding.bind(this);
-
     this.element.addEventListener('submit', this.createDataRow);
+
+    this.cancelAdding = this.cancelAdding.bind(this);
     this.cancelButton.addEventListener('click', this.cancelAdding);
-  }
-
-  set data(data) {
-    this._data = data;
-  }
-
-  get data() {
-    return this._data;
   }
 
   createDataRow(e) {
     e.preventDefault();
 
+    const id = performance.now();
     const name = this.element.querySelector('.input-name').value;
     const price = this.element.querySelector('.input-price').value;
 
@@ -34,10 +29,13 @@ export default class Popup {
     }
     this.element.reset();
     this.element.classList.add('hidden');
-    this.data = {
+    this.widget.addProduct({
+      id,
       name: clearedName,
       price: clearedPrice,
-    };
+    });
+    this.widget.clearDOM();
+    this.widget.renderTable();
   }
 
   static dataIsValid(name, price) {
