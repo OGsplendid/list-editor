@@ -1,11 +1,9 @@
 {
-  "name": "goblin-game",
+  "name": "list-editor",
   "version": "1.0.0",
-  "repository": {
-    "url": "git@github.com:OGsplendid/goblin-game"
-  },
-  "description": "just a simple game",
+  "description": "list-editor",
   "main": "index.js",
+  "repository": "git@github.com:OGsplendid/list-editor.git",
   "author": "Vladimir Sivakov <vladimir.a.sivakov@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -13,7 +11,7 @@
     "make": "http-server ./dist",
     "lint": "eslint .",
     "test": "jest",
-    "build": "webpack --mode=development",
+    "build": "webpack",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },

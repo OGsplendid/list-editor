@@ -1,7 +1,13 @@
 * {
-  box-sizing: border-box;
-  list-style-type: none;
+  margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  list-style-type: none;
+}
+
+.application {
+  position: relative;
 }
 
 .widget {
@@ -46,19 +52,23 @@
 .product {
   display: flex;
   justify-content: space-between;
-}
-
-.product:nth-child(n+2) {
-  margin-top: 15px;
-}
-
-.update, .delete {
-  cursor: pointer;
+  margin-top: 20px;
 }
 
 .tools {
+  width: 70px;
   display: flex;
-  margin-right: 60px;
+  justify-content: space-around;
+}
+
+.update {
+  width: 15px;
+  cursor: pointer;
+}
+
+.delete {
+  width: 15px;
+  cursor: pointer;
 }
 
 .popup {
@@ -74,6 +84,7 @@
 }
 
 .input-section {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -102,6 +113,14 @@
   border-radius: 15px;
   margin-left: 15px;
   cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  width: 200px;
+  padding: 5px 10px;
+  background: #fff;
+  z-index: 999;
 }
 
 .hidden {

@@ -1,1 +1,1 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/ax27908swgloq1ok?svg=true)](https://ci.appveyor.com/project/OGsplendid/goblin-game)
+[![Build status](https://ci.appveyor.com/api/projects/status/of545jviynp0ent3?svg=true)](https://ci.appveyor.com/project/OGsplendid/list-editor)

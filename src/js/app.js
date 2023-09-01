@@ -1,4 +1,4 @@
-import Popup from '../components/popup/Popup';
 import '../css/style.css';
+import App from '../components/app/App';
 
-const popup = new Popup(document.querySelector('.popup'));
+const app = new App(document.querySelector('.application'));
